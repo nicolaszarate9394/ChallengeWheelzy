@@ -1,0 +1,1 @@
+Los datos que casi no cambian los pondría en cache para no ir a la base todo el tiempo. Si la app corre en un solo servidor alcanza con un cache en memoria. Pero si hay varias instancias (tipo en la nube con balanceo), ahí ya necesitás algo compartido, como Redis, para que todas vean lo mismo.
